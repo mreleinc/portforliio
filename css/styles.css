@@ -1,0 +1,196 @@
+/* CSS Document */
+
+body {
+	margin: 0;
+	text-allign: left;
+	font-family: "Roboto","Poppins","Montserrat";
+	background-color: hsl(0, 0%, 98%);
+	color: hsl(234, 12%, 34%);
+	background-color: hsl(0, 0%, 98%);
+}
+
+.main-text {
+	font-family: "Roboto";
+	font-size: 1.125rem;
+}
+
+.author-text {
+	font-family: "Poppins";
+	color: #393e46;
+	font-size: 1.5rem;
+}
+
+.top-container {
+	text-align: center;
+	background-color: #E4FPF5;
+	position: relative;
+	padding-top: 100px;
+}
+
+.profile-container {
+	background-color: #fff;
+	text-align: center;
+}
+
+.middle-conatiner {
+	background-color: white;
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+.bottom-container {
+	background-color: blue;
+	margin: 100px 0;
+}
+
+.blog-container {
+	width: 1140px;
+	margin: 20px auto 0 auto;	
+}
+
+
+
+/* HEADER */
+
+header {
+	text-align: center;
+	display: grid;
+	margin: 40px 0;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.colored-section {
+  background-color: #010a43;
+  color: #fff;
+	padding: 4.5%;
+}
+
+p {
+	color: hsl(229, 6%, 66%);
+	font-size: 15px;
+}
+
+li {
+	color: hsl(229, 6%, 66%);
+	font-size: 15px;
+}
+
+.header-kid {
+	/*margin: 8px 33%; */
+	grid-column-start: 2;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+.first {
+	font-weight: 200;
+	margin-bottom: 0;
+}
+
+.second {
+	font-weight: 600;
+	margin: 0;
+}
+
+/* CARDS */
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 40px;
+	margin: 0 5%;
+}
+
+.grid-kid {
+	border-top: 4px solid;
+	border-radius: 5px;
+	box-shadow: 5px 10px 8px #888888;
+	height: 280px;
+}
+
+.grid-kid img {
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+.card1 {
+	border-color: #fff;
+	grid-area: 2 / 1 / 4 / 2;
+	
+}
+
+.card2 {
+	border-color: #fff;
+	grid-area: 1 / 2 / 3 / 3;
+}
+
+.card3 {
+	border-color: #fff;
+	grid-area: 3 / 2 / 5 / 3;
+}
+
+.card4 {
+	border-color: #fff;
+	grid-area: 2 / 3 / 4 / 4;
+}
+
+/* FOOTER */
+
+footer {
+	margin-top: 60px;
+	padding-top: 10px;
+	background-color: lightgray;
+}
+
+.attribution { font-size: 11px; text-allign: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 920px) {
+	
+	body {
+		font-size: 18px;
+	}
+	
+	/* HEADER */
+	
+	h2 {
+		font-size: 1.2rem;
+	}
+	
+	header {
+		grid-template-columns: 1fr;
+		margin: 60px 20px;
+		grid-gap: 10px;
+	}
+	
+	/* CARDS */
+	
+	.container {
+		grid-template-columns: 1fr;
+	}
+	
+	.card1 {
+		grid-area: 1;
+	}
+	
+	.card2 {
+		grid-area: 2;
+	}
+	
+	.card3 {
+		grid-area: 3;
+	}
+	
+	.card4 {
+		grid-area: 4;
+	}
+}
+
+
+
+
